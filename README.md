@@ -10,6 +10,8 @@ For example building react based libs.
 npm i --save-dev @team-griffin/install-self-peers
 
 yarn add --dev @team-griffin/install-self-peers
+
+pnpm add --dev @team-griffin/install-self-peers
 ```
 
 ## Usage
@@ -38,11 +40,13 @@ Add the following script in `package.json` to trigger the cli after installing w
 
 ## Arguments
 
-**`--npm`** (defaults: false) - This will generate an npm command rather than yarn
+**`--npm`** (defaults: false) - This will generate an npm command rather than yarn or pnpm
+
+**`--yarn`** (defaults: false) - This will generate a yarn command rather than npm or pnpm
 
 **`--no-execute`** - Will print to stdout instead of executing the command
 
-Other args can be passed directly to `yarn`/`npm` by using **`--`**:  
+Other args can be passed directly to `yarn`/`npm`/`pnpm` by using **`--`**:  
 **`install-self-peers -- --ignore-scripts`**
 
 ## License
